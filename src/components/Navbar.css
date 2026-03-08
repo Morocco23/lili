@@ -1,0 +1,221 @@
+/* ==========================================================================
+   NAVBAR STYLES
+   ========================================================================== */
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+/* Logo area */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 700;
+}
+
+.navbar-logo > div:first-child {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.25);
+}
+
+.navbar-logo h1 {
+  font-size: 28px;
+  color: #1e40af;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.navbar-logo p {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: -4px;
+  font-weight: 400;
+}
+
+/* Desktop links + language switcher */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.navbar-links a {
+  color: #374151;
+  transition: color 0.22s ease, transform 0.22s ease;
+  position: relative;
+}
+
+.navbar-links a:hover,
+.navbar-links a:focus {
+  color: #1e40af;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #f97316;
+  transition: width 0.28s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* Language switcher buttons */
+.navbar-links .lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 24px;
+}
+
+.lang-switcher button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background-color: transparent;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.lang-switcher button:hover {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+.lang-switcher button.active {
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(30, 64, 175, 0.3);
+}
+
+/* Mobile menu toggle button */
+.navbar-mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.navbar-mobile-toggle svg {
+  width: 28px;
+  height: 28px;
+  color: #1e40af;
+}
+
+/* Mobile menu (hidden by default) */
+.navbar-mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: white;
+  border-top: 1px solid #e5e7eb;
+  padding: 20px 24px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.navbar-mobile-menu a,
+.navbar-mobile-menu .lang-switcher-mobile {
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #374151;
+  text-align: center;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.navbar-mobile-menu a:last-child {
+  border-bottom: none;
+}
+
+.navbar-mobile-menu .lang-switcher-mobile {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px 0 10px;
+  border-bottom: none;
+}
+
+.navbar-mobile-menu .lang-switcher-mobile button {
+  flex: 1;
+  min-width: 110px;
+  max-width: 140px;
+}
+
+/* ==========================================================================
+   RESPONSIVE RULES
+   ========================================================================== */
+
+@media (max-width: 896px) {
+  .navbar-container {
+    padding: 0 20px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-mobile-toggle {
+    display: block;
+  }
+
+  .navbar-mobile-menu.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo h1 {
+    font-size: 24px;
+  }
+
+  .navbar-logo > div:first-child {
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+  }
+
+  .navbar-mobile-menu a {
+    font-size: 15px;
+  }
+}
