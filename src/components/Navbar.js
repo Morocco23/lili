@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="navbar-links">
           <a href="#languages">{t('ourLanguages')}</a>
           <a href="#programs">{t('programTitle')}</a>
-          <a href="#interest">Enroll Now</a>
+          <a href="#enow">Enroll Now</a>
 
           {/* Language switcher - desktop */}
           <div className="lang-switcher">
@@ -65,7 +65,7 @@ export default function Navbar() {
           {t('programTitle')}
         </a>
         <a
-          href="#enroll"
+          href="#enow"
           onClick={() => setMobileOpen(false)}
         >
           Enroll Now

@@ -1,15 +1,16 @@
 import { useState } from 'react';
-import LanguageCard from '../components/LanguageCard';
+// import LanguageCard from '../components/LanguageCard';
 import { useTranslation } from '../context/LanguageContext';
 import emailjs from '@emailjs/browser';
 import MotionOrb from './MotionOrb';
 import "./Home.css"
+import Hero from './hero';
 
-const languagesData = (t) => [
-  { lang: "English", desc: t('English_desc') },
-  { lang: "French",  desc: t('French_desc') },
-  // add others with t('Spanish_desc') etc.
-];
+// const languagesData = (t) => [
+//   { lang: "English", desc: t('English_desc') },
+//   { lang: "French",  desc: t('French_desc') },
+//   // add others with t('Spanish_desc') etc.
+// ];
 
 export default function Home() {
   const { t } = useTranslation();
@@ -54,25 +55,29 @@ export default function Home() {
 
   return (
     <>
+        
+        <Hero />
         <MotionOrb />
-      <section className="hero">
+
+      {/* <section className="hero">
         <div className="hero-container">
           <h1>{t('heroTitle')}</h1>
           <p>{t('heroSubtitle')}</p>
           <a href="#enroll">{t('startTrial')}</a>
         </div>
-      </section>
+      </section> */}
 
-      <section id="languages" className="languages">
+      {/* <section id="languages" className="languages">
         <h2>{t('ourLanguages')}</h2>
         <div className="languages-grid">
           {languagesData(t).map((item, i) => (
             <LanguageCard key={i} lang={item.lang} desc={item.desc} />
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Interest Form */}
+      <p id="enow" style={{height : "30px", width: "2px"}}></p>
       <section id="interest" style={{ maxWidth: '600px', margin: '60px auto', padding: '0 20px' }}>
         <h2 style={{ textAlign: 'center', marginBottom: '30px' }}>Express Your Interest</h2>
         

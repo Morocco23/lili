@@ -1,0 +1,270 @@
+.afrik-hero {
+    width: 100%;
+    background: var(--homebg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.afrik-hero-img-div {
+    width: 95%;
+    height: 320px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 40px;
+    animation: a-h-d 1.5s ease-in-out none;
+}
+@keyframes a-h-d {
+    from {
+       clip-path: ellipse(0% 0% at 100% 0%);
+    } to {
+       clip-path: ellipse(100% 100% at 67% 33%);
+    }
+}
+.afrik-hero-img-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    /* animation: a-h-i 1s ease-in-out forwards; */
+}
+@keyframes a-h-i {
+    from {
+        transform: rotate(20deg)
+    } to {
+        transform: rotate(0deg)
+    }
+}
+.afrik-hero-img-div div {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    color: white;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+}
+.afrik-hero-img-div div h1 {
+    font-size: 55px;
+    font-weight: 900;
+    margin: 0;
+    animation: h-a 1s ease-in-out forwards;
+    opacity: 0;
+}
+.afrik-hero-img-div div p {
+    color: white;
+    font-size: 20px;
+    animation: h-a 1s ease-in-out forwards;
+    opacity: 0;
+}
+.afrik-body {
+    margin-top: 0px;
+    width: 100%;
+}
+.sec-x {
+    width: 100%;
+    height: 100vh;
+    background: #c3dbff;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #242424dc;
+    padding-bottom: 30px;
+}
+.sec-x > div {
+    width: 46%;
+    margin-top: 30px;
+}
+
+.l-3, .r-3 {
+    background: rgb(255, 226, 226);
+    width: 100%;
+    height: 400px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.l-1 {
+    display: flex;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 25px;
+    gap: 10px;
+}
+.l-1 i {
+    color: #8b590e;
+}
+.l-1 div {
+    letter-spacing: 2px;
+}
+.l-3 {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    background: url('https://img.freepik.com/premium-photo/glossy-elearning-interface-design-online-education-services-ideal-promotional-banners_980716-517018.jpg');
+    background-size: cover;
+    justify-content: center;
+}
+.l-3 div {
+    padding: 10px 20px;
+    backdrop-filter: blur(2px);
+    background: #00000083;
+    width: 700px;
+    color: white;
+    transform: translate(1px, 1px);
+}
+.l-3 div p {
+    font-size: 15px;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right-top-align .r-1 {
+    font-size: 15px;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.right-top-align .r-1 p {
+    margin: 0;
+    color: #1f1f1fe0;
+}
+
+.right-top-align .r-2 {
+    display: flex;
+    background : var(--primary);
+    color: white;
+    border-radius: 25px;
+    padding: 4px 4px;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 40px;
+}
+.r-2 i {
+    color: #ffad33;
+    background: rgb(255, 255, 255);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 5px -5px 10px 1px #31313199;
+    animation: r-mov 3s ease-in-out infinite;
+}
+
+@keyframes r-mov {
+    0% {
+        transform: rotate(0deg)
+    } 50% {
+        transform: rotate(75deg)
+    } 100% {
+        transform: rotate(0deg)
+    }
+}
+.r-2 div {
+    margin: 0px 10px;
+    font-size: 13px;
+}
+.r-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('https://boostelearning.com/wp-content/uploads/2026/03/best-free-online-courses-with-certificates-enroll-now-ry0-5xq-h4h.jpg');
+    background-size: cover;
+}
+.r-3 > div {
+    background: #00000059;
+    border-radius: 25px;
+    color: white;
+    padding: 0px 30px;
+    backdrop-filter: blur(2px);
+    width: 80%;
+}
+.r-3 > div > div:nth-child(2) {
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.r-3 > div > div:nth-child(3) {
+    display: flex;
+    color: white;
+    border-radius: 25px;
+    padding: 4px 4px;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 40px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 20px auto;
+    background: #fffbf722;
+}
+.r-3 > div > div:nth-child(3) div {
+    margin: 0px 10px;
+    font-size: 13px;
+}
+.r-3 > div > div:nth-child(3) i {
+    color: white;
+    background: var(--primary);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff59;
+    box-shadow: inset 5px -5px 7px 1px #3131319a;
+    animation: r-mov 3s ease-in-out infinite;
+    animation-delay: 1s;
+}
+.r-3 h3 {
+    color: #c2d0ff;
+    font-size: 30px;
+}
+/* Responsive Design */
+@media screen and (max-width: 1208px) {
+    .afrik-hero-img-div div {
+        width: 90%
+    }
+    .afrik-hero-img-div div h1 {
+        font-size: 45px;
+        font-weight: 900;
+    }
+    .afrik-hero-img-div div p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 768px) {
+  .sec-x {
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    height: fit-content;
+  }
+
+    .sec-x > div {
+        width: 90%;
+        margin-top: 30px;
+    }
+    .r-3 > div {
+        background: #20202079;
+        border-radius: 25px;
+        color: white;
+        padding: 0px 10px;
+        backdrop-filter: blur(10px)
+    }
+}
+@media screen and (max-width: 600px) {
+    .afrik-hero-img-div div h1 {
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .afrik-hero-img-div div p {
+        font-size: 13px;
+    }
+}
+
