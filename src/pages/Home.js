@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import LanguageCard from '../components/LanguageCard';
-import GoogleFormEmbed from '../components/GoogleFormEmbed';
 import { useTranslation } from '../context/LanguageContext';
 import emailjs from '@emailjs/browser';
+import MotionOrb from './MotionOrb';
+import "./Home.css"
 
 const languagesData = (t) => [
   { lang: "English", desc: t('English_desc') },
@@ -53,6 +54,7 @@ export default function Home() {
 
   return (
     <>
+        <MotionOrb />
       <section className="hero">
         <div className="hero-container">
           <h1>{t('heroTitle')}</h1>
@@ -111,7 +113,7 @@ export default function Home() {
 
       {/* rest of sections – update texts with t('key') */}
       
-      <section id="enroll" className="enroll">
+      <section className="enroll">
         <h2>{t('tryLiveLesson')}</h2>
         {/* ... */}
       </section>

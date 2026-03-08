@@ -12,7 +12,7 @@ export const languages = {
     kids: "Ages 7–12\nKids Fun Track",
     youth: "Ages 13–25\nExam & University Prep",
     adults: "Ages 26–70\nAdult & Retirement Courses",
-    footer: "© 2026 Lisboa International Learning Institute • Nigeria\nWe teach the world… in your language.",
+    footer: "© 2026 Lisboa International Language Institute • Nigeria\nWe teach the world… in your language.",
     
     // Language descriptions (you can translate more later)
     English_desc: "Conversational & Business English for all ages. Cambridge & IELTS prep.",
@@ -32,7 +32,7 @@ export const languages = {
     kids: "7–12 ans\nParcours ludique enfants",
     youth: "13–25 ans\nPréparation examens & université",
     adults: "26–70 ans\nCours adultes & retraités",
-    footer: "© 2026 Lisboa International Learning Institute • Nigeria\nNous enseignons au monde… dans votre langue.",
+    footer: "© 2026 Lisboa International Language Institute • Nigeria\nNous enseignons au monde… dans votre langue.",
     
     English_desc: "Anglais conversationnel et professionnel pour tous les âges. Préparation Cambridge & IELTS.",
     French_desc: "Du DELF A1 au C2. Parfait pour voyages, travail et immigration.",
@@ -51,7 +51,7 @@ export const languages = {
     kids: "Ọmọ ọdún 7–12\nẸ̀kọ́ olórin fún àwọn ọmọdé",
     youth: "Ọdún 13–25\nÌmúrasílẹ̀ ìdánwò & yunifásítì",
     adults: "Ọdún 26–70\nẸ̀kọ́ àgbà & fún àwọn tí wọ́n ti fẹ̀yìn-tì",
-    footer: "© 2026 Lisboa International Learning Institute • Nigeria\nA ń kọ́ ayé… ní èdè rẹ.",
+    footer: "© 2026 Lisboa International Language Institute • Nigeria\nA ń kọ́ ayé… ní èdè rẹ.",
     
     English_desc: "Gẹ̀ẹ́sì ìfọ̀rọ̀sọ̀ àti ti iṣẹ́ fún gbogbo ọjọ́-ori. Ìmúrasílẹ̀ Cambridge & IELTS.",
     French_desc: "Láti DELF A1 sí C2. Dára fún ìrìn-ajo, iṣẹ́ àti ìṣíwọ̀.",

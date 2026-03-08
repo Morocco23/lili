@@ -16,7 +16,7 @@ export default function Navbar() {
           <div>L</div>
           <div>
             <h1>Lisboa</h1>
-            <p>International Learning Institute</p>
+            <p>International Language Institute</p>
           </div>
         </div>
 
@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="navbar-links">
           <a href="#languages">{t('ourLanguages')}</a>
           <a href="#programs">{t('programTitle')}</a>
-          <a href="#enroll">Enroll Now</a>
+          <a href="#interest">Enroll Now</a>
 
           {/* Language switcher - desktop */}
           <div className="lang-switcher">

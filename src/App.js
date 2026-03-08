@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import './styles.css';
 
 function App() {
   return (

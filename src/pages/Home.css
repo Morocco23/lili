@@ -1,0 +1,353 @@
+/* ==========================================================================
+   GLOBAL & RESET
+   ========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #f8fafc;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY & LINKS
+   ========================================================================== */
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111827;
+}
+
+a {
+  color: #1e40af;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1e3a8a;
+}
+
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+
+.hero {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+  padding: 9rem 1.5rem 7rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 30% 70%, rgba(255,255,255,0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hero-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: clamp(2.8rem, 8vw, 4.5rem);
+  margin-bottom: 1.4rem;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.hero p {
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero a {
+  display: inline-block;
+  background-color: #f97316;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem 2.8rem;
+  border-radius: 9999px;
+  box-shadow: 0 10px 25px rgba(249, 115, 22, 0.35);
+  transition: all 0.28s ease;
+}
+
+.hero a:hover,
+.hero a:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 35px rgba(249, 115, 22, 0.45);
+  background-color: #ea580c;
+}
+
+/* ==========================================================================
+   SECTION HEADINGS
+   ========================================================================== */
+
+section h2 {
+  font-size: clamp(2.25rem, 5vw, 3.2rem);
+  text-align: center;
+  margin-bottom: 3.5rem;
+  color: #1e40af;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.8rem;
+}
+
+section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 5px;
+  background: linear-gradient(to right, #f97316, #fb923c);
+  border-radius: 3px;
+}
+
+/* ==========================================================================
+   LANGUAGES GRID + CARDS
+   ========================================================================== */
+
+.languages {
+  padding: 6rem 1.5rem;
+  background: white;
+}
+
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.language-card {
+  background: white;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  transition: all 0.32s ease;
+  cursor: pointer;
+}
+
+.language-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 50px rgba(59, 130, 246, 0.22);
+}
+
+.language-card-image {
+  height: 180px;
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6.5rem;
+  transition: transform 0.4s ease;
+}
+
+.language-card:hover .language-card-image {
+  transform: scale(1.08);
+}
+
+.language-card-content {
+  padding: 1.8rem 1.6rem 2rem;
+  text-align: center;
+}
+
+.language-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.9rem;
+  color: #1e40af;
+}
+
+.language-card p {
+  color: #4b5563;
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+}
+
+.language-card button {
+  color: #f97316;
+  font-weight: 600;
+  background: none;
+  border: none;
+  font-size: 1.05rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.25s ease;
+}
+
+.language-card:hover button {
+  gap: 0.75rem;
+}
+
+/* ==========================================================================
+   INTEREST FORM
+   ========================================================================== */
+
+#interest {
+  padding: 5rem 1.5rem;
+  background: #f1f5f9;
+}
+
+#interest h2 {
+  margin-bottom: 2.5rem;
+}
+
+#interest form {
+  max-width: 620px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.3rem;
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.07);
+}
+
+#interest input,
+#interest select,
+#interest textarea {
+  width: 100%;
+  padding: 1rem 1.3rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  font-size: 1.05rem;
+  transition: all 0.2s ease;
+}
+
+#interest input:focus,
+#interest select:focus,
+#interest textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+}
+
+#interest button[type="submit"] {
+  background: #f97316;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1.1rem;
+  border: none;
+  border-radius: 0.9rem;
+  cursor: pointer;
+  transition: all 0.28s ease;
+}
+
+#interest button[type="submit"]:hover {
+  background: #ea580c;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(249, 115, 22, 0.3);
+}
+
+/* ==========================================================================
+   ENROLL (Google Form) SECTION
+   ========================================================================== */
+
+.enroll {
+  padding: 6rem 1.5rem;
+  background: linear-gradient(to bottom, #eff6ff, #dbeafe);
+  text-align: center;
+}
+
+.enroll h2 {
+  margin-bottom: 2.5rem;
+}
+
+.enroll-iframe {
+  max-width: 920px;
+  margin: 2rem auto 0;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 16px 50px rgba(30, 64, 175, 0.18);
+  border: 8px solid white;
+}
+
+/* ==========================================================================
+   PROGRAMS (AGE GROUPS)
+   ========================================================================== */
+
+.programs {
+  padding: 6rem 1.5rem;
+  background: white;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.program-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.25rem;
+  padding: 2.8rem 1.8rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.program-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 12px 40px rgba(59, 130, 246, 0.12);
+  transform: translateY(-6px);
+}
+
+.program-card span {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-top: 0.8rem;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+footer {
+  background: #1e293b;
+  color: #e2e8f0;
+  text-align: center;
+  padding: 4rem 1.5rem 3rem;
+  font-size: 1.05rem;
+}
+
+footer p:first-child {
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+/* ==========================================================================
+   RESPONSIVE TWEAKS
+   ========================================================================== */
+
+@media (max-width: 640px) {
+  .hero { padding-top: 6rem; padding-bottom: 5rem; }
+  .languages, .enroll, .programs { padding: 4rem 1rem; }
+  #interest form { padding: 2rem 1.4rem; }
+}
