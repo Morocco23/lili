@@ -68,7 +68,7 @@ const MotionOrb = () => {
             viewport={{ once: true }}
           >
             <h3 className="orb-title">
-              Master Languages at <span className="text-gradient">LIL Institute</span>
+              Master Excellence at <span className="text-gradient">AIS Institute</span>
             </h3>
             <p className="orb-description">
               Unlock the world through language. We offer engaging, high-quality courses in English, French, Spanish, German, 
@@ -77,7 +77,7 @@ const MotionOrb = () => {
             </p>
             <div className="orb-stats">
               <div className="stat">
-                <span className="stat-number">7+</span>
+                <span className="stat-number">5+</span>
                 <span className="stat-label">Languages Taught</span>
               </div>
               <div className="stat">

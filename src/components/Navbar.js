@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';   // ← new imports from reac
 import { useTranslation } from '../context/LanguageContext';
 import { languages } from '../i18n';
 import "./Navbar.css"
-
+import logoi  from "./logo.jpeg"
 export default function Navbar() {
   const { lang, setLang, t } = useTranslation();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -13,10 +13,12 @@ export default function Navbar() {
       <div className="navbar-container">
         {/* Logo */}
         <div className="navbar-logo">
-          <div>L</div>
           <div>
-            <h1>Lisboa</h1>
-            <p>International Language Institute</p>
+            <img src={logoi} alt="logo"/>
+          </div>
+          <div>
+            <h1>The Anointed International School</h1>
+            <p>Building future champions</p>
           </div>
         </div>
 

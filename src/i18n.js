@@ -6,7 +6,7 @@ export const languages = {
     heroTitle: "Learn Any Language from Age 7 to 70",
     heroSubtitle: "English • French • Spanish • German • Yoruba • Igbo • Hausa • Gun",
     startTrial: "Start Your Free Trial Today",
-    ourLanguages: "Our 8 Languages",
+    ourLanguages: "Our Core Values",
     tryLiveLesson: "Try a Live Lesson Right Now",
     programTitle: "Designed for Every Age",
     kids: "Ages 7–12\nKids Fun Track",

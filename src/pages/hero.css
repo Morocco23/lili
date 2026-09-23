@@ -104,7 +104,7 @@
     display: flex;
     align-items: flex-end;
     margin: 0;
-    background: url('https://img.freepik.com/premium-photo/glossy-elearning-interface-design-online-education-services-ideal-promotional-banners_980716-517018.jpg');
+    background: url('./pic2.jpeg');
     background-size: cover;
     justify-content: center;
 }

@@ -1,6 +1,6 @@
 import "./hero.css";
 import { motion } from 'framer-motion';
-
+import pic1 from "./pic1.jpeg";
 const Hero = () => {
   return (
     <div className="afrik-hero">
@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="afrik-hero-img-div">
         {/* Replace with a real image of your institute, students learning languages, world map, or diverse group */}
         <img 
-          src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80" 
+          src={pic1}
           alt="Students learning languages at Lisboa International" 
         />
         <div>
@@ -39,9 +39,9 @@ const Hero = () => {
               className="l-2"
             >
               <h1>
-                Lisboa International <br />
-                Learning Institute <br />
-                Premium Language Programs
+                The Anointed International <br />
+                School <br />
+                Premium Programs
               </h1>
             </motion.div>
 
@@ -108,7 +108,7 @@ const Hero = () => {
                 </h3>
 
                 <div><br />
-                  Lisboa International Learning Institute is committed to transparent, effective, and joyful language education in Abuja.
+                  The Anointed International School is committed to transparent, effective, and joyful education.
                 </div>
 
                 <motion.div 
