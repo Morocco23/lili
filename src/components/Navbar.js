@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';   // ← new imports from react-icons
-import { useTranslation } from '../context/LanguageContext';
-import { languages } from '../i18n';
-import "./Navbar.css"
-import logoi  from "./logo.jpeg"
+import "./Navbar.css";
+import logoi  from "./logo.jpeg";
+
 export default function Navbar() {
-  const { lang, setLang, t } = useTranslation();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -24,22 +22,9 @@ export default function Navbar() {
 
         {/* Desktop menu */}
         <div className="navbar-links">
-          <a href="#languages">{t('ourLanguages')}</a>
-          <a href="#programs">{t('programTitle')}</a>
+          <a href="#languages">nav1</a>
+          <a href="#programs">nav1</a>
           <a href="#enow">Enroll Now</a>
-
-          {/* Language switcher - desktop */}
-          <div className="lang-switcher">
-            {Object.values(languages).map((l) => (
-              <button
-                key={l.code}
-                onClick={() => setLang(l.code)}
-                className={lang === l.code ? 'active' : ''}
-              >
-                {l.flag} {l.name}
-              </button>
-            ))}
-          </div>
         </div>
 
         {/* Mobile toggle button */}
@@ -58,13 +43,13 @@ export default function Navbar() {
           href="#languages"
           onClick={() => setMobileOpen(false)}
         >
-          {t('ourLanguages')}
+          navm1
         </a>
         <a
           href="#programs"
           onClick={() => setMobileOpen(false)}
         >
-          {t('programTitle')}
+           navm2
         </a>
         <a
           href="#enow"
@@ -72,22 +57,6 @@ export default function Navbar() {
         >
           Enroll Now
         </a>
-
-        {/* Language switcher - mobile */}
-        <div className="lang-switcher-mobile">
-          {Object.values(languages).map((l) => (
-            <button
-              key={l.code}
-              onClick={() => {
-                setLang(l.code);
-                setMobileOpen(false);
-              }}
-              className={lang === l.code ? 'active' : ''}
-            >
-              {l.flag} {l.name}
-            </button>
-          ))}
-        </div>
       </div>
     </nav>
   );

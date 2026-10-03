@@ -1,6 +1,6 @@
 import "./hero.css";
 import { motion } from 'framer-motion';
-import pic1 from "./pic1.jpeg";
+import pic1 from "./s2.png";
 const Hero = () => {
   return (
     <div className="afrik-hero">
@@ -9,7 +9,7 @@ const Hero = () => {
         {/* Replace with a real image of your institute, students learning languages, world map, or diverse group */}
         <img 
           src={pic1}
-          alt="Students learning languages at Lisboa International" 
+          alt="Students learning languages at AIS" 
         />
         <div>
           <h1>Unlock the World Through Language</h1>

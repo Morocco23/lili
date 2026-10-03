@@ -19,11 +19,11 @@ body {
    TYPOGRAPHY & LINKS
    ========================================================================== */
 
-h1, h2, h3 {
+/* h1, h2, h3 {
   font-weight: 700;
   line-height: 1.2;
   color: #111827;
-}
+} */
 
 a {
   color: #1e40af;
@@ -214,20 +214,20 @@ section h2::after {
   margin-bottom: 2.5rem;
 }
 
-#interest form {
-  max-width: 620px;
+.formx {
+  max-width: 580px;
   margin: 0 auto;
   display: grid;
   gap: 1.3rem;
-  background: white;
+  background: rgb(31, 55, 107);
   padding: 2.5rem 2rem;
   border-radius: 1.25rem;
   box-shadow: 0 10px 40px rgba(0,0,0,0.07);
 }
 
-#interest input,
-#interest select,
-#interest textarea {
+.formx input,
+.formx select,
+.formx textarea {
   width: 100%;
   padding: 1rem 1.3rem;
   border: 1px solid #d1d5db;
@@ -236,15 +236,15 @@ section h2::after {
   transition: all 0.2s ease;
 }
 
-#interest input:focus,
-#interest select:focus,
-#interest textarea:focus {
+.formx input:focus,
+.formx select:focus,
+.formx textarea:focus {
   outline: none;
   border-color: #3b82f6;
   box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
 }
 
-#interest button[type="submit"] {
+.formx button[type="submit"] {
   background: #f97316;
   color: white;
   font-size: 1.2rem;
@@ -256,7 +256,7 @@ section h2::after {
   transition: all 0.28s ease;
 }
 
-#interest button[type="submit"]:hover {
+.formx button[type="submit"]:hover {
   background: #ea580c;
   transform: translateY(-2px);
   box-shadow: 0 12px 30px rgba(249, 115, 22, 0.3);
@@ -347,7 +347,7 @@ footer p:first-child {
    ========================================================================== */
 
 @media (max-width: 640px) {
-  .hero { padding-top: 6rem; padding-bottom: 5rem; }
+  .hero { padding-top: 6rem; padding-bottom: 6rem; }
   .languages, .enroll, .programs { padding: 4rem 1rem; }
   #interest form { padding: 2rem 1.4rem; }
 }

@@ -1,19 +1,13 @@
 import { useState } from 'react';
-// import LanguageCard from '../components/LanguageCard';
-import { useTranslation } from '../context/LanguageContext';
+
 import emailjs from '@emailjs/browser';
 import MotionOrb from './MotionOrb';
 import "./Home.css"
 import Hero from './hero';
+import Footer from './Footer';
 
-// const languagesData = (t) => [
-//   { lang: "English", desc: t('English_desc') },
-//   { lang: "French",  desc: t('French_desc') },
-//   // add others with t('Spanish_desc') etc.
-// ];
 
 export default function Home() {
-  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '', email: '', phone: '', whatsapp: '', ageGroup: '', language: '', message: ''
   });
@@ -78,59 +72,18 @@ export default function Home() {
 
       {/* Interest Form */}
       <p id="enow" style={{height : "30px", width: "2px"}}></p>
-      <section id="interest" style={{ maxWidth: '600px', margin: '60px auto', padding: '0 20px' }}>
-        <h2 style={{ textAlign: 'center', marginBottom: '30px' }}>Express Your Interest</h2>
-        
-        <form onSubmit={handleSubmit} style={{ display: 'grid', gap: '16px' }}>
-          <input name="name"     placeholder="Full Name"     value={formData.name}     onChange={handleChange} required />
-          <input name="email"    type="email" placeholder="Email Address" value={formData.email}    onChange={handleChange} required />
-          <input name="phone"    placeholder="Phone Number"  value={formData.phone}    onChange={handleChange} required />
-          <input name="whatsapp" placeholder="WhatsApp Number" value={formData.whatsapp} onChange={handleChange} />
-          
-          <select name="ageGroup" value={formData.ageGroup} onChange={handleChange} required>
-            <option value="">Select Age Group</option>
-            <option value="7-12">7–12 years</option>
-            <option value="13-25">13–25 years</option>
-            <option value="26-70">26–70 years</option>
-          </select>
-
-          <select name="language" value={formData.language} onChange={handleChange} required>
-            <option value="">Interested Language</option>
-            <option value="English">English</option>
-            <option value="French">French</option>
-            <option value="Spanish">Spanish</option>
-            <option value="German">German</option>
-            <option value="Yoruba">Yoruba</option>
-            <option value="Igbo">Igbo</option>
-            <option value="Hausa">Hausa</option>
-            <option value="Gun">Gun</option>
-          </select>
-
-          <textarea name="message" placeholder="Any additional notes..." value={formData.message} onChange={handleChange} rows="4" />
-
-          <button type="submit" style={{ padding: '14px', background: '#2563eb', color: 'white', border: 'none', borderRadius: '8px', fontSize: '18px' }}>
-            Send Interest
-          </button>
-
-          {status && <p style={{ textAlign: 'center', marginTop: '12px', color: status.includes('sent') ? 'green' : 'red' }}>{status}</p>}
-        </form>
-      </section>
 
       {/* rest of sections – update texts with t('key') */}
       
       <section className="enroll">
-        <h2>{t('tryLiveLesson')}</h2>
+        <h2>Building Future Champions!</h2>
         {/* ... */}
       </section>
 
       <section id="programs" className="programs">
-        <h2>{t('programTitle')}</h2>
+        <h2>Raising Holistic Champions!</h2>
         {/* use t('kids'), t('youth'), t('adults') */}
       </section>
-
-      <footer>
-        <p>{t('footer')}</p>
-      </footer>
     </>
   );
 }

@@ -1,0 +1,241 @@
+.hero-section {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(ellipse at center, var(--tcsfh) 0%, var(--tcsbg) 70%);
+  padding-top: 150px;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.3;
+  animation: float 8s ease-in-out infinite;
+}
+
+.gradient-orb-1 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #FFD700, transparent);
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.gradient-orb-2 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #FFA500, transparent);
+  top: 30%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+.gradient-orb-3 {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #FFA500, transparent);
+  bottom: 30%;
+  left: 60%;
+  animation-delay: 4s;
+}
+
+.spline-orb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: transform 0.1s ease-out;
+}
+
+.orb-core {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orb-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid;
+  animation: rotate 20s linear infinite;
+}
+
+.orb-ring-1 {
+  width: 300px;
+  height: 300px;
+  border-color: white;
+  animation-duration: 20s;
+}
+
+.orb-ring-2 {
+  width: 200px;
+  height: 200px;
+  border-color: rgba(255, 165, 0, 0.5);
+  animation-duration: 15s;
+  animation-direction: reverse;
+}
+
+.orb-ring-3 {
+  width: 100px;
+  height: 100px;
+  border-color: rgba(255, 165, 0, 0.5);
+  animation-duration: 10s;
+}
+
+.orb-center {
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, #ffc963, var(--tcsf));
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: #252525;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #252525;
+  margin-bottom: 50px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 18px 35px;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.7;
+}
+
+.scroll-line {
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, #FFD700);
+  animation: scroll-pulse 2s ease-in-out infinite;
+}
+
+@keyframes scroll-pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .orb-core {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .orb-ring-1 { width: 250px; height: 250px; }
+  .orb-ring-2 { width: 180px; height: 180px; }
+  .orb-ring-3 { width: 90px; height: 90px; }
+  
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .orb-core {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .orb-ring-1 { width: 200px; height: 200px; }
+  .orb-ring-2 { width: 140px; height: 140px; }
+  .orb-ring-3 { width: 70px; height: 70px; }
+  
+  .gradient-orb-1 { width: 200px; height: 200px; }
+  .gradient-orb-2 { width: 150px; height: 150px; }
+  .gradient-orb-3 { width: 100px; height: 100px; }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    padding: 15px 25px;
+    font-size: 14px;
+  }
+}

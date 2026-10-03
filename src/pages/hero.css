@@ -11,7 +11,7 @@
     height: 320px;
     border-radius: 25px;
     overflow: hidden;
-    margin-top: 40px;
+    margin-top: 90px;
     animation: a-h-d 1.5s ease-in-out none;
 }
 @keyframes a-h-d {
