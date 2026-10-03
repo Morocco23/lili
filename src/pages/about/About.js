@@ -206,13 +206,13 @@ const About = () => {
                   <p className="ceo-role">{ceo.role}</p>
                   <p className="ceo-description">{ceo.description}</p>
                   <div className="ceo-social">
-                    <a href={ceo.social.linkedin} className="social-link-t" target='_blank'>
+                    <a href={ceo.social.linkedin} rel="noreferrer" className="social-link-t" target='_blank'>
                       <i class="bi bi-linkedin"></i>
                     </a>
-                    <a href={ceo.social.twitter} className="social-link-t" target='_blank'>
+                    <a href={ceo.social.twitter} rel="noreferrer"  className="social-link-t" target='_blank'>
                       <i class="bi bi-instagram"></i>
                     </a>
-                    <a href={`mailto:${ceo.social.email}`} className="social-link-t" target='_blank'>
+                    <a href={`mailto:${ceo.social.email}`} rel="noreferrer"  className="social-link-t" target='_blank'>
                       <i class="bi bi-envelope"></i>
                     </a>
                   </div>
@@ -238,11 +238,11 @@ const About = () => {
                   <p className="ceo-role">{ceo.role}</p>
                   <p className="ceo-description">{ceo.description}</p>
                   <div className="ceo-social">
-                    <a href={ceo.social.linkedin} className="social-link-t" target='_blank'>
+                    <a href={ceo.social.linkedin} rel="noreferrer"  className="social-link-t" target='_blank'>
                       <i class="bi bi-linkedin"></i>
                     </a>
                     
-                    <a href={`mailto:${ceo.social.email}`} className="social-link-t" target='_blank'>
+                    <a href={`mailto:${ceo.social.email}`} rel="noreferrer"  className="social-link-t" target='_blank'>
                       <i class="bi bi-envelope"></i>
                     </a>
                   </div>
@@ -270,11 +270,11 @@ const About = () => {
                   <img src={member.image} alt={member.name} />
                   <div className="team-overlay">
                     <div className="team-social">
-                      <a href={member.social.linkedin} className="social-link-t" target='_blank'>
+                      <a href={member.social.linkedin} rel="noreferrer"  className="social-link-t" target='_blank'>
                         <i class="bi bi-linkedin"></i>
                       </a>
                       
-                      <a href={`mailto:${member.social.email}`} className="social-link-t" target='_blank'>
+                      <a href={`mailto:${member.social.email}`} rel="noreferrer"  className="social-link-t" target='_blank'>
                         <i class="bi bi-envelope"></i>
                       </a>
                     </div>

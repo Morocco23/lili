@@ -4,48 +4,9 @@ import emailjs from '@emailjs/browser';
 import MotionOrb from './MotionOrb';
 import "./Home.css"
 import Hero from './hero';
-import Footer from './Footer';
 
 
 export default function Home() {
-  const [formData, setFormData] = useState({
-    name: '', email: '', phone: '', whatsapp: '', ageGroup: '', language: '', message: ''
-  });
-  const [status, setStatus] = useState('');
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setStatus('Sending...');
-
-    const templateParams = {
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone,
-      whatsapp: formData.whatsapp,
-      ageGroup: formData.ageGroup,
-      language: formData.language,
-      message: formData.message || 'No additional message',
-    };
-
-    emailjs.send(
-      'service_z14pwjr',
-      'template_vrn287l',
-      templateParams,
-      'fMd4EE_o3lXzMU45p'
-    )
-      .then(() => {
-        setStatus('Message sent! We will contact you soon.');
-        setFormData({ name:'', email:'', phone:'', whatsapp:'', ageGroup:'', language:'', message:'' });
-      })
-      .catch((err) => {
-        console.error(err);
-        setStatus('Failed to send. Please try again.');
-      });
-  };
 
   return (
     <>
