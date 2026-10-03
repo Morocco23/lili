@@ -1,6 +1,4 @@
-import { useState } from 'react';
 
-import emailjs from '@emailjs/browser';
 import MotionOrb from './MotionOrb';
 import "./Home.css"
 import Hero from './hero';
