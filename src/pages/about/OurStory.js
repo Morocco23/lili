@@ -1,6 +1,6 @@
-import React from 'react';
+
 import './OurStory.css';
-import logo from '../logo.png';
+
 
 const OurStory = () => {
   return (
