@@ -12,8 +12,8 @@ const Hero = () => {
           alt="Students learning languages at AIS" 
         />
         <div>
-          <h1>Unlock the World Through Language</h1>
-          <p>Master English, French, Spanish, German, Yoruba, Igbo, Hausa, and Gun — from age 7 to 70. Join Lisboa International Learning Institute in Abuja today.</p>
+          <h1>Unlock the World Through Education</h1>
+          <p>Master Academic and Moral Excellence Today in Kaduna today.</p>
         </div>
       </div>
 
@@ -33,15 +33,14 @@ const Hero = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.5, duration: 1 }}
               className="l-2"
             >
               <h1>
-                The Anointed International <br />
-                School <br />
-                Premium Programs
+                The Anointed International
+                School
               </h1>
             </motion.div>
 
@@ -52,11 +51,10 @@ const Hero = () => {
               className="l-3"
             >
               <div>
-                <h3 style={{ color: '#c2d0ff'}}>World-Class Language Mastery</h3>
+                <h3 style={{ color: '#c2d0ff'}}>World-Class Academic Services</h3>
                 <p>
-                  Expert-led courses in 8 powerful languages: English, French, Spanish, German, Yoruba, Igbo, Hausa, and Gun.<br />
-                  Our programs build fluency, cultural confidence, and real-world communication skills for school, work, travel, or personal growth.<br />
-                  Designed for every age, fun for kids, exam-focused for youth, practical for adults.
+                We provide quality Primary and Secondary education that empowers students to excel academically and grow in character.<br />
+                Our curriculum fosters critical thinking, creativity, leadership, and strong moral values in a nurturing learning environment.<br />
                 </p>
               </div>
             </motion.div>
@@ -73,13 +71,13 @@ const Hero = () => {
                 className="r-1"
               >
                 <p>
-                  Build fluency and cultural understanding across continents.
+                At Anointed International School, we provide a nurturing and inspiring environment where students develop academically, socially, and morally.
                 </p>
                 <p>
-                  Prepare for exams (IELTS, DELF, DELE, Goethe), business, migration, or daily conversation.
+                Our Primary and Secondary School programs are designed to build strong foundations in knowledge, critical thinking, creativity, and leadership.
                 </p>
                 <p>
-                  Clean, engaging classes — no gimmicks, just proven results and supportive teachers.
+                Dedicated teachers, , modern learning approaches, and a commitment to excellence
                 </p>
               </motion.div>
 

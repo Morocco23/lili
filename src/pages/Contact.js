@@ -25,13 +25,12 @@ const Contact = () => {
         phone: formData.phone,
         whatsapp: formData.whatsapp,
         ageGroup: formData.ageGroup,
-        language: formData.language,
         message: formData.message || 'No additional message',
       };
 
       emailjs.send(
-        'service_z14pwjr',
-        'template_vrn287l',
+        'service_i28qwi9',
+        'template_fl58c1b',
         templateParams,
         'fMd4EE_o3lXzMU45p'
       )
@@ -60,7 +59,7 @@ const Contact = () => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.7 }}
                     >
-                    <h2 className="contact-title">Contact <span className="text-gradient">Us</span>
+                    <h2 className="contact-title" style={{color: ""}}>Contact <span className="text-gradient">Us</span>
                     </h2>
                     </motion.div>
                     
@@ -83,8 +82,9 @@ const Contact = () => {
                         </p>
                         <div className="contact-details">
                           <div className="contact-item">
-                            <strong>Our Email:</strong> <a href="mailto:eniolad206@gmail.com"
-                            className='contact-link'>anointedschool@gmail.com</a>
+                            <strong>Official School Contact:</strong> <a href="mailto:admin@anointedschoolng.com"
+                            className='contact-link'>admin@anointedschoolng.com</a>
+                          
                           </div>
                           <div className="contact-item">
                             <strong>Our Whatsapp:</strong> <a
@@ -97,7 +97,8 @@ const Contact = () => {
                             </a>
                           </div>
                           <div className="contact-item">
-                            <strong>Response Time:</strong> Within 24 hours
+                            <strong>General Enquiries:</strong> <a href="mailto:nkechi.okogbue@anointedschoolng.com"
+                            className='contact-link'>nkechi.okogbue@anointedschoolng.com</a>
                           </div>
                         </div>
                       </div>
@@ -119,15 +120,16 @@ const Contact = () => {
                             <option value="7-12">I'm applying for Job</option>
                             <option value="13-25">I want to enroll as a student</option>
                             <option value="26-70">I want to enroll a student</option>
+                            <option value="26-70">Enquiries</option>
                           </select>
 
                           <textarea name="message" placeholder="Any additional notes..." value={formData.message} onChange={handleChange} rows="4" />
 
-                          <button type="submit" style={{ padding: '14px', background: '#2563eb', color: 'white', border: 'none', borderRadius: '8px', fontSize: '18px' }}>
+                          <button type="submit" style={{ padding: '14px', background: '#2563eb', color: 'white', border: 'none', borderRadius: '8px', fontSize: '18px', fontWeight: "bold" }}>
                             Send Interest
                           </button>
 
-                          {status && <p style={{ textAlign: 'center', marginTop: '12px', color: status.includes('sent') ? 'green' : 'red' }}>{status}</p>}
+                          {status && <p style={{ textAlign: 'center', marginTop: '12px', color: status.includes('sent') ? 'green' : 'red', fontWeight: "bold"  }}>{status}</p>}
                         </form>
                       </motion.div>
                     </div>

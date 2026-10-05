@@ -1,5 +1,6 @@
 import './Services.css';
 import HeroSection from '../../components/services-components/service-hero/ServiceHeroSection';
+import AboutSchool from './AboutSchool';
 
 
 const Services = () => {
@@ -7,6 +8,7 @@ const Services = () => {
   return (
     <>
     <HeroSection />
+    <AboutSchool />
     </>
   );
 };

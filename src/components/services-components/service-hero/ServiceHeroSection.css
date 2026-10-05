@@ -5,7 +5,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(ellipse at center, var(--tcsfh) 0%, var(--tcsbg) 70%);
+  background: linear-gradient( rgb(255, 255, 185) 0%, #f9f9ff 90%);
   padding-top: 150px;
 }
 
@@ -21,7 +21,7 @@
 .gradient-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(60px);
+  filter: blur(10px);
   opacity: 0.3;
   animation: float 8s ease-in-out infinite;
 }
@@ -32,7 +32,6 @@
   background: radial-gradient(circle, #FFD700, transparent);
   top: 20%;
   left: 10%;
-  animation-delay: 0s;
 }
 
 .gradient-orb-2 {
@@ -41,16 +40,14 @@
   background: radial-gradient(circle, #FFA500, transparent);
   top: 30%;
   right: 15%;
-  animation-delay: 2s;
 }
 
 .gradient-orb-3 {
   width: 150px;
   height: 150px;
-  background: radial-gradient(circle, #FFA500, transparent);
+  background: radial-gradient(circle, #FFA500, #008cff);
   bottom: 30%;
   left: 60%;
-  animation-delay: 4s;
 }
 
 .spline-orb {
@@ -81,7 +78,7 @@
 .orb-ring-1 {
   width: 300px;
   height: 300px;
-  border-color: white;
+  border-color: rgb(24, 9, 231);
   animation-duration: 20s;
 }
 
@@ -103,7 +100,7 @@
 .orb-center {
   width: 60px;
   height: 60px;
-  background: radial-gradient(circle, #ffc963, var(--tcsf));
+  background: radial-gradient(circle, #ffc963, #2563eb);
   border-radius: 50%;
   box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
   animation: glow 2s ease-in-out infinite;
@@ -113,7 +110,9 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
+.text-gradient {
+  color: #2563eb;
+}
 .hero-content {
   position: relative;
   z-index: 2;

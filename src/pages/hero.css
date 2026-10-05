@@ -1,10 +1,16 @@
 .afrik-hero {
     width: 100%;
-    background: var(--homebg);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+}
+.l-2 {
+    width: 100%;
+}
+.l-2 h1 {
+    line-height: 1.2;
+    text-align: left;
 }
 .afrik-hero-img-div {
     width: 95%;
@@ -43,7 +49,7 @@
     color: white;
     text-align: center;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 3;
     width: 100%;
 }
 .afrik-hero-img-div div h1 {
@@ -58,6 +64,17 @@
     font-size: 20px;
     animation: h-a 1s ease-in-out forwards;
     opacity: 0;
+}
+@keyframes h-a {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .afrik-body {
     margin-top: 0px;
@@ -262,6 +279,7 @@
     .afrik-hero-img-div div h1 {
         font-size: 30px;
         font-weight: 900;
+        width: 80%;
     }
     .afrik-hero-img-div div p {
         font-size: 13px;

@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    padding-bottom: 40px;
 }
 @property --angle{
 syntax: "<angle>";
@@ -83,7 +84,7 @@ to {
 }
 
 .contact {
-  background: var(--tcsbg);
+  background: transparent;
   padding-top: 60px;
 }
 .contact-title {
@@ -128,9 +129,9 @@ to {
 }
 
 .contact-item strong {
-  color: #ffc963;
+  color: #5a3c05;
   display: inline-block;
-  width: 130px;
+  width: 180px;
 }
 .contact-link {
   color: #1607a3;

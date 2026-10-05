@@ -71,22 +71,20 @@ const MotionOrb = () => {
               Master Excellence at <span className="text-gradient">AIS Institute</span>
             </h3>
             <p className="orb-description">
-              Unlock the world through language. We offer engaging, high-quality courses in English, French, Spanish, German, 
-              Yoruba, Igbo, Hausa, and Gun — designed for learners aged 7 to 70. Join our vibrant community on Abuja and 
-              build fluency, cultural understanding, and confidence for life, travel, work, or education.
+              At Anointed School, we are committed to nurturing young minds through quality education, strong moral values, and a supportive learning environment. Our Primary and Secondary School programs are designed to help students achieve academic excellence, develop critical thinking skills, and build the confidence needed to succeed in an ever-changing world. Join our vibrant school community and give your child the foundation for a bright and successful future.
             </p>
             <div className="orb-stats">
               <div className="stat">
-                <span className="stat-number">5+</span>
-                <span className="stat-label">Languages Taught</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">7–70</span>
-                <span className="stat-label">Age Range</span>
-              </div>
-              <div className="stat">
                 <span className="stat-number">1000+</span>
-                <span className="stat-label">Happy Learners</span>
+                <span className="stat-label">Students enrolled</span>
+              </div>
+              <div className="stat">
+                <span className="stat-number">2</span>
+                <span className="stat-label">Branches</span>
+              </div>
+              <div className="stat">
+                <span className="stat-number">40+</span>
+                <span className="stat-label">Staffs</span>
               </div>
             </div>
           </motion.div>

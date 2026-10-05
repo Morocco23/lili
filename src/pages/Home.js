@@ -8,10 +8,10 @@ export default function Home() {
 
   return (
     <>
-        
-        <Hero />
-        <MotionOrb />
-
+      
+      <Hero />
+      <MotionOrb />
+      
       {/* <section className="hero">
         <div className="hero-container">
           <h1>{t('heroTitle')}</h1>
