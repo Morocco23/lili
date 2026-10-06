@@ -11,7 +11,7 @@ const Footer = () => {
       icon: <lord-icon
                   src="https://cdn.lordicon.com/srsgifqc.json"
                   trigger="loop"
-                  colors={`primary:'#2544A3',secondary:'#9B4416'`}
+                  colors={{primary:'#2544A3',secondary:'#9B4416'}}
                   style={{width: '20px', height: '20px'}}
                 />,
       href: 'tel:+2347067949228',
@@ -22,7 +22,7 @@ const Footer = () => {
       icon: <lord-icon
                   src="https://cdn.lordicon.com/diihvcfp.json"
                   trigger="loop"
-                  colors={`primary:'#2544A3',secondary:'#9B4416'`}
+                  colors={{primary:'#250000',secondary: '#9B4416'}}
                   style={{width: '20px', height: '20px'}}
                 />,
       href: 'mailto:admin@anointedschoolng.com',
@@ -33,7 +33,7 @@ const Footer = () => {
       icon: <lord-icon
                   src="https://cdn.lordicon.com/surcxhka.json"
                   trigger="loop"
-                  colors={'primary:"#2544A3",secondary:"#9B4416"'}
+                  colors={{primary:"#ffc963",secondary:"#9B4416"}}
                   style={{width: '20px', height: '20px'}}
                 />,
       href: 'https://maps.app.goo.gl/QqNWGUwkrEKrU5ai7',
