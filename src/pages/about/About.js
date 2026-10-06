@@ -15,10 +15,10 @@ const About = () => {
       name: 'Pst Mrs Abigail Daniel',
       role: 'CEO & Founder',
       image: ImageCeo,
-      description: 'Visionary leader with 15+ years in architecture and technology.',
+      description: 'Visionary leader with 20+ years in Academics & Administration',
       social: {
-        linkedin: '#',
-        twitter: '#',
+        // linkedin: '#',
+        // twitter: '#',
         email: 'dayodaniella@gmail.com'
       },
       isCEO: true
@@ -30,8 +30,8 @@ const About = () => {
       image: ImageCf,
       description: 'Passionate Business Leader.',
       social: {
-        linkedin: '#',
-        twitter: '#',
+        // linkedin: '#',
+        // twitter: '#',
         email: 'oshim2995@gmail.com'
       },
       isCOCEO: true
@@ -41,10 +41,10 @@ const About = () => {
       name: 'Miss Nkechi',
       role: 'Principal',
       image: ImageLa,
-      description: 'Award-winning Enterprnuer in sustainable solutions.',
+      description: 'Award-winning Enterprenuer in sustainable solutions.',
       social: {
-        linkedin: '#',
-        twitter: '#',
+        // linkedin: '#',
+        // twitter: '#',
         email: 'nkemchi37@gmail.com '
       }
     },
@@ -67,8 +67,8 @@ const About = () => {
       image: ImageGd,
       description: 'Creative professional with expertise in Goverment and Administration',
       social: {
-        linkedin: '#',
-        twitter: '#',
+        // linkedin: '#',
+        // twitter: '#',
         email: 'jacksonsenior998@gmail.com'
       }
     }
@@ -206,12 +206,12 @@ const About = () => {
                   <p className="ceo-role">{ceo.role}</p>
                   <p className="ceo-description">{ceo.description}</p>
                   <div className="ceo-social">
-                    <a href={ceo.social.linkedin} rel="noreferrer" className="social-link-t" target='_blank'>
+                    {/* <a href={ceo.social.linkedin} rel="noreferrer" className="social-link-t" target='_blank'>
                       <i class="bi bi-linkedin"></i>
                     </a>
                     <a href={ceo.social.twitter} rel="noreferrer"  className="social-link-t" target='_blank'>
                       <i class="bi bi-instagram"></i>
-                    </a>
+                    </a> */}
                     <a href={`mailto:${ceo.social.email}`} rel="noreferrer"  className="social-link-t" target='_blank'>
                       <i class="bi bi-envelope"></i>
                     </a>
@@ -238,9 +238,9 @@ const About = () => {
                   <p className="ceo-role">{ceo.role}</p>
                   <p className="ceo-description">{ceo.description}</p>
                   <div className="ceo-social">
-                    <a href={ceo.social.linkedin} rel="noreferrer"  className="social-link-t" target='_blank'>
+                    {/* <a href={ceo.social.linkedin} rel="noreferrer"  className="social-link-t" target='_blank'>
                       <i class="bi bi-linkedin"></i>
-                    </a>
+                    </a> */}
                     
                     <a href={`mailto:${ceo.social.email}`} rel="noreferrer"  className="social-link-t" target='_blank'>
                       <i class="bi bi-envelope"></i>
@@ -270,9 +270,9 @@ const About = () => {
                   <img src={member.image} alt={member.name} />
                   <div className="team-overlay">
                     <div className="team-social">
-                      <a href={member.social.linkedin} rel="noreferrer"  className="social-link-t" target='_blank'>
+                      {/* <a href={member.social.linkedin} rel="noreferrer"  className="social-link-t" target='_blank'>
                         <i class="bi bi-linkedin"></i>
-                      </a>
+                      </a> */}
                       
                       <a href={`mailto:${member.social.email}`} rel="noreferrer"  className="social-link-t" target='_blank'>
                         <i class="bi bi-envelope"></i>

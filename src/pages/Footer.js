@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
 import  logoa  from "./logo.png"
@@ -25,8 +25,8 @@ const Footer = () => {
                   colors={`primary:'#2544A3',secondary:'#9B4416'`}
                   style={{width: '20px', height: '20px'}}
                 />,
-      href: 'mailto:builders.tech280@gmail.com',
-      text: 'anointedschool@gmail.com',
+      href: 'mailto:admin@anointedschoolng.com',
+      text: 'admin@anointedschoolng.com',
       type: 'email'
     },
     {
@@ -42,32 +42,32 @@ const Footer = () => {
     }
   ];
 
-  const socialLinks = [
-    {
-      platform: 'Facebook',
-      href: 'https://www.facebook.com/share/12LVLJJa8pP/',
-      icon: <i className='bi bi-facebook'></i>,
-      className: 'facebook'
-    },
-    {
-      platform: 'Instagram',
-      href: 'https://www.instagram.com/builders_tech3/',
-      icon: <i className='bi bi-instagram'></i>,
-      className: 'instagram'
-    },
-    {
-      platform: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/builders-tech-966139276/',
-      icon: <i className='bi bi-linkedin'></i>,
-      className: 'linkedin'
-    },
-    {
-      platform: 'TikTok',
-      href: 'https://www.tiktok.com/@builderstech1?is_from_webapp=1&sender_device=pc',
-      icon: <i className='bi bi-tiktok'></i>,
-      className: 'tiktok'
-    }
-  ];
+  // const socialLinks = [
+  //   {
+  //     platform: 'Facebook',
+  //     href: 'https://www.facebook.com/share/12LVLJJa8pP/',
+  //     icon: <i className='bi bi-facebook'></i>,
+  //     className: 'facebook'
+  //   },
+  //   {
+  //     platform: 'Instagram',
+  //     href: 'https://www.instagram.com/builders_tech3/',
+  //     icon: <i className='bi bi-instagram'></i>,
+  //     className: 'instagram'
+  //   },
+  //   {
+  //     platform: 'LinkedIn',
+  //     href: 'https://www.linkedin.com/in/builders-tech-966139276/',
+  //     icon: <i className='bi bi-linkedin'></i>,
+  //     className: 'linkedin'
+  //   },
+  //   {
+  //     platform: 'TikTok',
+  //     href: 'https://www.tiktok.com/@builderstech1?is_from_webapp=1&sender_device=pc',
+  //     icon: <i className='bi bi-tiktok'></i>,
+  //     className: 'tiktok'
+  //   }
+  // ];
 
   const services = [
     { name: 'Creche', href: '#architecture' },
@@ -105,9 +105,9 @@ const Footer = () => {
     }
   };
 
-  const handleSocialClick = (platform) => {
-    console.log(`Social media click: ${platform}`);
-  };
+  // const handleSocialClick = (platform) => {
+  //   console.log(`Social media click: ${platform}`);
+  // };
 
   const handleContactClick = (type, text) => {
     console.log(`${type} clicked:`, text);
@@ -195,7 +195,7 @@ const Footer = () => {
           {/* Social Media & Quick Links Section */}
           <div className="footer-section social-quick">
             <h4 className="footer-heading">Connect With Us</h4>
-            <div className="social-links">
+            {/* <div className="social-links">
               {socialLinks.map((social, index) => (
                 <a 
                   key={index}
@@ -209,7 +209,7 @@ const Footer = () => {
                   <span className="social-icon">{social.icon}</span>
                 </a>
               ))}
-            </div>
+            </div> */}
             
             <div className="quick-links">
               <h5 className="quick-links-title">Quick Links</h5>
@@ -240,9 +240,13 @@ const Footer = () => {
               <p>&copy; {currentYear} The Anointed international School. All rights reserved.</p>
             </div>
             <div className="footer-nav">
+              <Link to="/contact">
               <a href="#privacy">Privacy Policy</a>
+              </Link>
               <span className="separator">|</span>
+              <Link to="/contact">
               <a href="#terms">Terms of Service</a>
+              </Link>
             </div>
           </div>
         </div>

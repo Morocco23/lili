@@ -141,8 +141,8 @@ const AboutSchool = () => {
             </p>
 
             <div className="founder-signature">
-              <strong>Our Founder</strong>
-              <span>The Anointed International School</span>
+              <strong>Our Motto</strong>
+              <span><i>Build Future Champions</i></span>
             </div>
 
           </div>
