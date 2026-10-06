@@ -1,7 +1,7 @@
 /* Footer Component Styles */
 :root {
   --primary-gold: #ffc963;
-  --secondary-dark-blue: var(--tcs);
+  --secondary-dark-blue: #1a1a6d;
   --dark-bg: #0f1419;
   --darker-bg: #141927;
   --text-light: #e2e8f0;
@@ -62,13 +62,13 @@
 
 .company-tagline {
   padding: 0.8rem;
-  background: linear-gradient(45deg, var(--secondary-dark-blue), var(--primary-gold));
+  background: linear-gradient(45deg, var(--secondary-dark-blue), transparent);
   border-radius: 8px;
   text-align: center;
 }
 
 .tagline {
-  color: var(--darker-bg);
+  color: rgb(255, 153, 0);
   font-weight: 600;
   font-size: 0.9rem;
   letter-spacing: 1px;

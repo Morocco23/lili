@@ -19,7 +19,7 @@ const About = () => {
       social: {
         // linkedin: '#',
         // twitter: '#',
-        email: 'dayodaniella@gmail.com'
+        // email: '#'
       },
       isCEO: true
     },
@@ -32,7 +32,7 @@ const About = () => {
       social: {
         // linkedin: '#',
         // twitter: '#',
-        email: 'oshim2995@gmail.com'
+        // email: 'oshim2995@gmail.com'
       },
       isCOCEO: true
     },
@@ -45,7 +45,7 @@ const About = () => {
       social: {
         // linkedin: '#',
         // twitter: '#',
-        email: 'nkemchi37@gmail.com '
+        // email: ''
       }
     },
     {
@@ -55,9 +55,9 @@ const About = () => {
       image: ImageCto,
       description: 'Cloud infrastructure expert.',
       social: {
-        linkedin: 'https://www.linkedin.com/in/eniola-daniel-595031281/',
-        twitter: 'https://x.com/EniolaD64447076',
-        email: 'eniolad206@gmail.com'
+        // linkedin: 'https://www.linkedin.com/in/eniola-daniel-595031281/',
+        // twitter: 'https://x.com/EniolaD64447076',
+        // email: 'eniolad206@gmail.com'
       }
     },
     {
@@ -69,7 +69,7 @@ const About = () => {
       social: {
         // linkedin: '#',
         // twitter: '#',
-        email: 'jacksonsenior998@gmail.com'
+        // email: 'jacksonsenior998@gmail.com'
       }
     }
   ];
@@ -206,15 +206,15 @@ const About = () => {
                   <p className="ceo-role">{ceo.role}</p>
                   <p className="ceo-description">{ceo.description}</p>
                   <div className="ceo-social">
-                    {/* <a href={ceo.social.linkedin} rel="noreferrer" className="social-link-t" target='_blank'>
+                    { /* <a href={ceo.social.linkedin} rel="noreferrer" className="social-link-t" target='_blank'>
                       <i class="bi bi-linkedin"></i>
                     </a>
                     <a href={ceo.social.twitter} rel="noreferrer"  className="social-link-t" target='_blank'>
                       <i class="bi bi-instagram"></i>
-                    </a> */}
-                    <a href={`mailto:${ceo.social.email}`} rel="noreferrer"  className="social-link-t" target='_blank'>
+                    </a> */ }
+                    { /* <a href={`mailto:${ceo.social.email}`} rel="noreferrer"  className="social-link-t" target='_blank'>
                       <i class="bi bi-envelope"></i>
-                    </a>
+                    </a> */ }
                   </div>
                 </div>
               </div>
@@ -242,9 +242,9 @@ const About = () => {
                       <i class="bi bi-linkedin"></i>
                     </a> */}
                     
-                    <a href={`mailto:${ceo.social.email}`} rel="noreferrer"  className="social-link-t" target='_blank'>
+                    {/* <a href={`mailto:${ceo.social.email}`} rel="noreferrer"  className="social-link-t" target='_blank'>
                       <i class="bi bi-envelope"></i>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -274,9 +274,9 @@ const About = () => {
                         <i class="bi bi-linkedin"></i>
                       </a> */}
                       
-                      <a href={`mailto:${member.social.email}`} rel="noreferrer"  className="social-link-t" target='_blank'>
+                      {/* <a href={`mailto:${member.social.email}`} rel="noreferrer"  className="social-link-t" target='_blank'>
                         <i class="bi bi-envelope"></i>
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
