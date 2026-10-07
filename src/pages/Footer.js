@@ -47,7 +47,7 @@ const Footer = () => {
                   colors="primary:#ffc963,secondary:#4848aa"
                   style={{width: '20px', height: '20px'}}
                 />,
-      href: 'https://maps.app.goo.gl/QqNWGUwkrEKrU5ai7',
+      href: 'https://maps.app.goo.gl/pmrvpLCuQ2vZbaUv6',
       text: 'Gonin-Gora Kaduna',
       type: 'link'
     }
