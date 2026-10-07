@@ -36,8 +36,8 @@ const Footer = () => {
                   colors="primary:#ffc963,secondary:#4848aa"
                   style={{width: '20px', height: '20px'}}
                 />,
-      href: 'mailto:admin@anointedschoolng.com',
-      text: 'Enquiries: admin@anointedschoolng.com',
+      href: 'mailto:nkechi.okogbue@anointedschoolng.com',
+      text: 'Enquiries: nkechi.okogbue@anointedschoolng.com',
       type: 'email'
     },
     {
