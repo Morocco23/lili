@@ -13,7 +13,7 @@ const Hero = () => {
         />
         <div>
           <h1>Unlock the World Through Education</h1>
-          <p>Master Academic and Moral Excellence Today in Kaduna today.</p>
+          <p>Master Academic and Moral Excellence Today in Kaduna.</p>
         </div>
       </div>
 
