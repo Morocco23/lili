@@ -53,8 +53,7 @@ const HeroSection = () => {
               We <span className="text-gradient">Innovate</span>.
             </h1>
             <p className="hero-subtitle">
-              Transforming visions into reality through cutting-edge architecture, 
-              innovative IT solutions, and premium printing services.
+              Building and Transforming Lives
             </p>
           </motion.div>
 

@@ -143,10 +143,9 @@ const About = () => {
                <span className="logo-text \mission-title">The Anointed International School</span>
           </div>
             <p className="mission-text">
-              At Builder's Tech, we bridge the gap between imagination and reality. 
-              Our mission is to deliver innovative architectural solutions, cutting-edge 
-              IT services, and premium printing experiences that exceed expectations 
-              and drive success for our clients.
+              At The Anointed International School, our mission is to provide a nurturing, inspiring, and excellence-driven learning environment where every student is empowered to discover their potential, develop strong character, and achieve academic success.
+
+              We are committed to delivering quality education through innovative teaching, sound moral values, creativity, critical thinking, and practical skills that prepare our students to become confident, responsible, and productive leaders who will make a positive impact in their communities and the world.
             </p>
           </motion.div>
         </div>
